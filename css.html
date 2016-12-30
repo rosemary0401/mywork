@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<!--1.how to use css--3ways
+2.fonts
+3.border
+4.padding
+5.margin
+6.the id attribute
+7.the class attribute
+
+-->
+<head>
+<style>
+h2 {color:red;}
+h3 {font-family:verdana;
+font-size:160%;}
+h4 {border:1px solid black;
+padding:10px;
+margin:50px;}
+#h501{color:blue;}
+h6.xyz{color:purple;}
+</style>
+<link rel="stylesheet" href="styles.css">
+<!--An external style sheet can be written in any text editor. The file must not contain any HTML code, and must be saved with a .css extension.-->
+</head>
+<body>
+<!--css can be added to html elements in 3 ways:
+*inline-by using style attribute in html elements
+*internal-by using a <style> element in th <head> section
+*external-by using an external css file
+The most common way to add CSS, is to keep the styles in separate CSS files.
+
+-->
+<h1 style="color:blue;">An inline CSS is used to apply a unique style to "a single HTML element".</h1>
+<h2>An internal CSS is used to define a style for "a single HTML page".
+An internal CSS is defined in the head section of an HTML page, within a style element.</h2>
+
+<p>An external style sheet is used to define the style "for many HTML pages."
+
+With an external style sheet, you can change the look of an entire web site, by changing one file!
+
+To use an external style sheet, add a link to it in the head section of the HTML page </p>
+
+<!--fonts-->
+<h3>use internal css to display fonts</h3>
+<!--border&padding&margin-->
+<h4>The CSS border property defines a border around an HTML element</h4>
+<pre>The CSS "padding" property defines a padding (space) between the text and the border
+The CSS "margin" property defines a margin (space) outside the border
+</pre>
+<!--id selector
+****The id of an element should be unique within a page, so the id selector is used to select one unique element! Every id selector only shows one time within a page.You can put different id selectors within a page like id="h501",id="h502"
+-->
+<h5 id="h501">to define a specific style for one special element, add an id attribute to the element</h5>
+
+<!--class selector-->
+<h6 class="xyz">To define a style for a special type of elements, add a class attribute to the element</h6>
+<h6 class="xyz">show the same result</h6>
+</body>
+</html>

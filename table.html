@@ -1,0 +1,41 @@
+<!Doctype html>
+<Html>
+<head>
+<style>
+table,th,td{border:1px solid black;
+border-collapse:collapse;}
+th,td{padding:15px;}
+th{text-align:left;}
+</style>
+
+</head>
+<title></title>
+
+<body>
+<!--th的h代表橫排的標題head,default 置中加粗
+tr的r代表row,t代表table,td的d代表data-->
+<table style="width:100%" >
+<caption>toeic vacabulary</caption>
+<tr>
+<th>toeic vocab</th>
+<th colspan="2">basic</th>
+<th>advanced</th>
+</tr>
+<!--關於colspan v.s. rowspan分辨,某個欄位橫向增加寬度,實際改變的欄位不是橫向的排,而是直向的欄,你增加某格橫向寬度的時候,你會注意緊鄰的上下格寬度,這時候是直欄colspan的考慮;反之亦然,你增加某格直向的高度時,實際改變的欄位不是直向的欄,而是橫向的排,你會注意緊鄰的左右高度,這時候是橫排rowspan的考慮-->
+<tr>
+<td>resume</td>
+<td colspan="2">opening</td>
+<td rowspan="2">vacancy</td>
+</tr>
+<tr>
+<td>applicant</td>
+<td>requirement</td>
+<td>qualified</td>
+</tr>
+
+</table>
+
+
+</body>
+
+</Html>

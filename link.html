@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<body>
+<!--a link can be an image or any other html element
+
+syntax:<a href="url"> the name you want to display on screen</a>
+****Without a forward slash on subfolder addresses, you might generate two requests to the server. Many servers will automatically add a forward slash to the address, and then create a new request.
+EX:http://www.w3schools.com/html/  is  different from http://www.w3schools.com/html
+
+use image as a link:
+Use the <img> element (inside <a>)
+<a href="url"><img src="file name" alt="alternative text if can't display the image" style="width:10px;height:10px;border:0;"></a>  
+****Note: border:0; is added to prevent IE9 (and earlier) from displaying a border around the image (when the image is a link).
+local links:
+
+
+
+link colors:
+the target attribute:
+to define where to open the linked document
+
+create a bookmark:
+Use the id attribute (id="value") to define bookmarks in a page
+HTML bookmarks are used to allow readers to jump to specific parts of a Web page.
+
+Bookmarks can be useful if your webpage is very long.
+
+To make a bookmark, you must first create the bookmark, and then add a link to it.
+
+When the link is clicked, the page will scroll to the location with the bookmark.
+
+the target attribute:
+The target attribute specifies where to open the linked document.
+different target attributes:
+_blank - Opens the linked document in a new window or tab
+_self - Opens the linked document in the same window/tab as it was clicked (this is default)
+_parent - Opens the linked document in the parent frame
+_top - Opens the linked document in the full body of the window
+framename - Opens the linked document in a named frame
+-->
+
+<p><a href="#c10">Jump to chapter 8</a></p>
+<h2>ch1</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>ch2</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>ch3</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>ch4</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 5</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 6</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 7</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 8</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2>Chapter 9</h2>
+<p>This chapter explains ba bla bla</p>
+
+<h2 id="c10">Chapter 10</h2>
+<p>This chapter explains ba bla bla</p>
+
+<a href="http://www.google.com.tw/" target="_blank">google!</a>
+<img src="http://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com">
+
+
+</body>
+</html>
