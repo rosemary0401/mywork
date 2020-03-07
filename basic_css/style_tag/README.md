@@ -12,6 +12,6 @@
 * Inside `<style></style>` tag, the CSS syntax will start with `#id` selector and `{ }`
   ```sh
   #id {
-  css declarations;
+    property: value ;
   }
   ```
