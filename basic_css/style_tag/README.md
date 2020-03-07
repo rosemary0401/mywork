@@ -10,6 +10,8 @@
 * add an `id` attribute to each HTML element
 * an `id` should be used only one time
 * Inside `<style></style>` tag, the CSS syntax will start with `#id` selector and `{ }`
-  - `#id`{
+  ```sh
+  #id {
   css declarations;
   }
+  ```
