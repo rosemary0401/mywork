@@ -6,5 +6,5 @@
 * Create a new style.css file independent of original html file and save both files in the same folder
 * Write css code in style.css file and must not contain any HTML code
   - The syntax is written the same way as written by using internal style
-  - `HTML element { proverty:value ; }`
+  - `HTML element { property: value ; }`
 * Write `<link rel="stylesheet" href="style.css">` in `<head></head>` section
