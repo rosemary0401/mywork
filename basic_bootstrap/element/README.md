@@ -4,4 +4,5 @@
   - Use jquery js & bootstrap js in the `<script>` for src attribute
 
 # Explain for table.html
-* Add
+* First do the same steps above
+
