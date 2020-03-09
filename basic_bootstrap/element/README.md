@@ -10,3 +10,5 @@
 
 # Explain for table.html
 * First do the same steps above
+* Bootstrap has many types of tables which have different `class` attribute
+  -Use bootstrap defined class value of table and put it in `<table>` tag
