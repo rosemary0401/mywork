@@ -1,5 +1,6 @@
 # Explain
 * Margin is the space between the border and the next element.
+![margin & padding](https://github.com/rosemary0401/mywork/blob/master/basic_css/margin/Difference-Between-Padding-and-Margin.png)
 * `margin` property has four individual properties:
   - `margin-top`
   - `margin-right`
