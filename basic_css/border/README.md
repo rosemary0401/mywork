@@ -10,3 +10,4 @@
   - margin: top&bottom right&left
   - margin: top right&bottom bottom
   - margin: inherit
+  - margin: one value for all four properties
