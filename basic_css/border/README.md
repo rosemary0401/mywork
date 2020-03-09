@@ -1,9 +1,11 @@
 # Explain
-* `margin` property has four individual margin properties:
+* Margin is the space between the border and the next element.
+* `margin` property has four individual properties:
   - `margin-top`
   - `margin-right`
   - `margin-bottom`
   - `margin-left`
+  
 * `margin` properties can have different values:
   - margin: auto
   - margin: top right bottom left
