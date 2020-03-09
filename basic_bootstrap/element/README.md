@@ -11,4 +11,8 @@
 # Explain for table.html
 * First do the same steps above
 * Bootstrap has many types of tables which have different `class` attribute
-  -Use bootstrap defined class value of table and put it in `<table>` tag
+  - Use bootstrap defined class value of table and put it in `<table>` tag
+* table HTML structure from outside to inside will be `<table>`->`<thead>`->`<tr>`->`<th>`->`<td>`
+  - `<tr>` means each table row
+  - `<th>` means each table heading, bold & centered by default
+  - `<td>` means each table data/cell which can contain all sorts of HTML elements such as text, images, lists, other tables, etc.
