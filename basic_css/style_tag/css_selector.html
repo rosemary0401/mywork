@@ -2,25 +2,16 @@
 <html>
   <head>
     <style>
-      h2.sentence01 {
-        color: red;
-      }
-      p.sentence02 {
-        font-size: 50px;
-      }
+      /* select nested tags with specific classes */
       .set01 .sentence02 {
-        color:orange;
+        color: orange;
       }
     </style>
   </head>
   <body>
-    <h2 class="sentence01">I am a h2 tag.</h2>
     <div class="set01">
-      <p class="sentence02">I change the text size.</p>
+      <p class="sentence02">I will be in orange color.</p>
     </div>
-    <div class="set02">
-      <p class="sentence02">I change the font-size as sentence02.</p>
-  </div>
-    <p>I don't change anything.</p>
+    <p class="sentence02">I am also sentence02, but I am NOT in orange color.</p>
   </body>
 </html>
