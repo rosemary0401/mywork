@@ -1,0 +1,55 @@
+.display-block a {
+  border: 3px blue solid;
+  display:block;
+  width:200px;
+  height:100px;
+  margin: 10px;
+  padding-top:10px;
+  padding-left: 10px;
+}
+
+.display-inline {
+  border: 3px orange solid;
+  display:inline;
+  /* width:250px; not work */
+  /* height:250px; not work*/
+  padding: 10px;
+  margin-left: 20px;
+}
+
+.display-inline-block {
+  border: 3px green solid;
+  display:inline-block;
+  width:250px;
+  height:150px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.ul_background_header {
+  background: #3acec2;
+  padding: 20px;
+}
+
+.main-nav a {
+  text-decoration: none; 
+  /* remove text-underline */
+  font-size: 30px;
+  color: #3acec2; 
+}
+
+.main-nav a:hover{
+  color:#093a58;
+}
+
+.main-nav li {
+  /* list-style: none; */
+  display:inline-block;
+  /* change to inline-block , liststyle will remove automatically. */
+  background: white;
+  /* margin-right: -0.3125em; 用負值可以remove list彼此間的空隙*/
+}
+

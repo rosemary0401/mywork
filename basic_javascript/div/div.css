@@ -1,0 +1,33 @@
+body {
+  max-width:50%;
+  margin: 10px auto;
+}
+
+img {
+  width: 125px;
+  height: 125px;
+  float: left;
+  margin: 10px;
+
+}
+
+div {
+  background-color:rgb(250,250,250);
+  border: 1px rgb(240,240,240) solid;
+  float:left;
+  width:50%;
+  line-height:20px;
+  margin: -1px auto;  //div上下空隙用負數，避免border粗度重疊
+}
+
+div:hover {
+  background-color: rgb(220,220,220);
+}
+
+h3 {
+  margin: 10px 0 0 0;
+}
+
+p {
+  margin: 2px 0 0 0;
+}

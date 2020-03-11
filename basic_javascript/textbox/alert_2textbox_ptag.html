@@ -1,0 +1,17 @@
+<!Doctype html>
+<html>
+<body>
+<input type="text" id="myText" value="Sunny is a dog.">
+<input type="text" id="myText_1" value="She loves biting people.">
+<button onclick="myFunction()">Try it</button>
+<p id="doggy"></p>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myText").value + document.getElementById("myText_1").value;
+    document.getElementById("doggy").innerHTML=x;
+}
+</script>
+
+</body>
+</html>

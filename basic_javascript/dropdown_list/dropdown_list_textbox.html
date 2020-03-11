@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+<input type="text" id="myText">
+<form>
+<select id="choose" onChange="myFunction()">
+  <option value="apple">apple</option>
+  <option value="cat">cat</option>
+  <option value="dog">dog</option>
+  <option value="fat">fat</option>
+</select>
+</form>
+<script>
+function myFunction()
+{document.getElementById("myText").value=document.getElementById("choose").value;
+
+}
+</script>
+</body>
+</html>

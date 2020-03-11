@@ -1,0 +1,162 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <script>
+      function myFunction(){
+      document.getElementById('demo6').innerHTML='paragraph changed!';
+      }
+    </script>
+  </head>
+  <body>
+    <h3>My first Javascript</h3>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+    Click me to display Date and Time.
+    </button>
+    <p id="demo"></p>
+    
+    <h3>What can JavaScript do?</h3>
+    <p id="demo1">JavaScript can change HTML content.</p>
+    <button onclick="document.getElementById('demo1').innerHTML = 
+    'Hello Javascript!'">Click Me!</button>
+    
+    <h3>JavaScript changes the value of the src (source) attribute of an image.</h3>
+    <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+    <img id="myImage" src="pic_bulboff.gif">
+    <button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+    
+    <h3 id="demo2">JavaScript can change the style of an HTML element.</h3>
+    <button onclick="document.getElementById('demo2').style.fontSize='35px'">Click Me!</button>
+    <button onclick="document.getElementById('demo2').style.color='blue'">Click Me!</button>
+    
+    <h3>JavaScript can Can Hide HTML Elements.</h3>
+    <p id="demo3">JavaScript will hide when you click on 'ClickMe'.</p> 
+    <button onclick="document.getElementById('demo3').style.display='none'">Click Me to hide!</button>
+    
+    <h3>JavaScript can show HTML element.</h3>
+    <p id="demo4" style="display:none">Hello, this is JavaScript!</p>
+    <button onclick="document.getElementById('demo4').style.display='block'">Click Me to show!</button>
+
+    <h3>JavaScript in Body + modified HTML element using innerHTML</h3>
+    <p>You can place any number of scripts in an HTML document.</p>
+    <p>Scripts can be placed in the 'body', or in the 'head' section of an HTML page, or in both.</p>
+    <p id="demo5"></p>
+    <script>document.getElementById('demo5').innerHTML="JavaScript!";</script>
+    
+    <h3>JavaScript in Head</h3>
+    <p>Use event to call function</p>
+    <p id="demo6">A Paragraph</p>
+    <button onclick="myFunction()">Try it!</button>
+
+    <h3>JavaScript in Body</h3>
+    <p>put function in script in body</p>
+    <p id="demo7">Another Paragraph</p>
+    <button onclick="changeParagraph()">Try it!</button>
+    <script>function changeParagraph(){
+      document.getElementById('demo7').innerHTML="Paragraph changed!";
+      }
+    </script>
+    <!--Placing scripts at the bottom of the <body> element improves the display speed, 
+      because script interpretation slows down the display.-->
+    <h3>External JavaScript</h3>
+    <p>1.JavaScript files have the file extension .js.</p>
+    <p>2.To use an external script, put the name of the script file in the src (source) attribute of a script tag</p>
+    <p>3.External scripts cannot contain script tags.</p>
+    <p>4.You can place an external script reference in head or body as you like.</p>
+    <p>5.To add several script files to one page - use several script tags</p>
+    <p>6.External scripts can be referenced with a full URL or with a path relative to the current web page.</p>
+    <p>總結:head、body、external file都可以放，一次可以放多個script tags</p>
+
+    <h3>JavaScript can "display" data in different ways</h3>
+    <p>1.innerHTML-select element to define html content</p>
+    <p>2.document.write() - only for testing purpose, 
+      and be careful to use it because it will delete all exsiting HTML after an HTML is loaded.</p>
+    <p>3.window.alert() - alert box</p>
+    <p>4.console.log -debugging prupose</p>
+
+    <h3>JavaScript Statements</h3>
+    <p>A <b>JavaScript program</b> is a list of <b>statements</b> to be executed by a computer.</p>
+    <p id="demo8"></p>
+    <script>
+      const x = 1;
+      const y = 2;
+      const z = x + y;
+      document.getElementById('demo8').innerHTML="The value of z is "+ z +" .";
+    </script>
+    
+    <h3>JavaScript Identifiers(命名)</h3>
+    <p>numbers are not allowed as the first character</p>
+    <p>letters,underscore,and dollar sign can be the first character</p>
+    <p>case sensitive</p>
+    <p>Hyphens are not allowed in JavaScript. They're reserverd for subtractions</p>
+    <p>comment： // (single line) and /**/ (multiple lines)</p>
+   
+
+    <h3>assignment operator vs equal to</h3>
+    <p>assingment : =</p>
+    <p>equal to : == or ===(equal value or equal type)</p>
+    <p>not equal to: != or !==(not equal value or not equal type)</p>
+
+    <h3>variables</h3>
+    <p>Start the statement with var and separate the variables by comma</p>
+    <p>To declare all variables at the beginning of a script.</p>
+    <p>variables are often declared without a value. The value can be something that has to be calculated,
+       or something that will be provided later, like user input.</p>
+    <p>A variable declared without a value will have the value undefined.</p>
+    <p>If you re-declare a JavaScript variable, it will not lose its value before you give another value to it.</p>
+    <p>If you put a number in quotes, the rest of the numbers will be treated as strings, and concatenated.</p>
+    <p>different：var x = "5" + 2 + 3 will display 523(string在前，數字在後者不會自動計算), 
+      but var x = 2 + 3 + "5" will display 55(數字在前者會自動計算)</p>
+    <p>If you add a number and a string, the result will be a string! 
+      Different sequences can produce different results.</p>
+
+    <h3>Objects</h3>
+    <p>1.objects can contain many values.</p>
+    <p>2.values are written as name:value pairs</p>
+    <p>3.These name:value pairs are properties or method. ex:car.color or car.start</p>
+    <p>4.<b>Two ways to access object properties</b>：objectName.propertyName or objectName["propertyName"]<br>
+    ex:car.color or car["color"]
+    </p>
+    <p>5.The property values of objects can also have methods also called functions stored as a property.<br>
+    ex:var person{ <br>
+      firstName:"Rose"<br>
+      lastName:"Chao"<br>
+      fullName : function() { <br>
+      return this.firstName + " " + this.lastName;<br>
+    }}<br>
+    <p>About "this" keyword：this.firstName means that the firstName property of "this" object which refers to the "person" object. </p>
+    </p>
+    <p>6.<b>To access object:</b>objectName.methodName(), ex: person.fullName() If you access a method without 
+    parentheses()，it will return the function definition not a result of function.</p>
+    <p>7.When a JavaScript variable is declared with the keyword "new", the variable is created as an object<br>
+    Don't declare strings, numbers, and booleans as objects.It slows down execution speed and 
+    produce some unexpected results.<br>
+    ex:var x = new String(); // Declares x as a String object
+    </p>
+    <p>8.Comparing two JavaScript objects will always return false.</p>
+
+    <h3>Events</h3>
+    <p>1.HTML events are "things" that happen to HTML elements.</p>
+    <p>2.When JavaScript is used in HTML pages, JavaScript can "react" on these events.</p>
+    <p>3.An HTML event can be something the browser does, or something a user does.</p>
+    <p>4.HTML allows event handler attributes, with JavaScript code, to be added to HTML elements.</p>
+    <p>ex: button onclick="document.getElementById('').innerHTML = Date()">The time is? /button></p>
+    <p>or change the content of its own element : button onclick="this.innerHTML=Date()">The time is? /button></p>
+    <p>5.可以在HTML的element掛handler，call function等</p>
+
+    <h3>String</h3>
+    <p>1.difference between indexOf(), and lastIndexOf() ：indexOf()指第一個指定的字符出現的位置，
+      而lastIndexOf()是找出指定字符最後出現的位置，若該字符重複多次出現，就會給出最後出現的位置</p>
+    <p>2.Both indexOf(), and lastIndexOf() return -1 if the text is not found.</p>
+    <p>3.兩者皆可放置第二個參數在()內，例如indeOf('John',5)，表示從左0數到第5的位置，開始往後搜尋'John'的從左到右第一個出現的位置，數字順序仍接續下去;
+      lastIndexOf('John',5)表示從左0數到第5的位置，開始往前搜尋'John'最後出現的位置，順序從左到右找到字首J為最後出現的位置</p>
+    <p>4.search() is not equal to indexOf()</p>
+    <p>5.All string methods return a new string. They don't modify the original string.<br>
+        Formally said: Strings are immutable: Strings cannot be changed, only replaced.</p>
+    <p>6.幾種常用method:<br></p>
+    <p>找長度:</p>
+    <p>找字符位置</p>
+    <p>替換字符</p>
+    <p>串聯字符</p>
+    <p>轉換string為array</p>
+  </body>
+</html>

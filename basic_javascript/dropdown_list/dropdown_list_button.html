@@ -1,0 +1,24 @@
+<!Doctype html>
+<html>
+    <body>
+<form>
+<select id="choose" size="8">
+  <option value="apple">apple</option>
+  <option value="cat">cat</option>
+  <option value="dog">dog</option>
+  <option value="fat">fat</option>
+</select>
+</form>
+<button onClick="myFunction()">Insert option</button>
+<script>
+        function myFunction(){
+        var x =document.getElementById("choose");
+        var option=document.createElement("option");
+        option.text="doggy";
+        x.add(option);
+        
+        
+        }
+        </script>
+    </body>
+</html>

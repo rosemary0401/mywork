@@ -1,0 +1,23 @@
+table {
+  border-collapse: collapse;
+  width: 30%;
+}
+
+.for_border {
+  border-top: 5px rgb(73,182,214) solid ;
+}
+
+th {
+  text-align: left;
+  padding: 3px;
+  color:blue;
+}
+
+td {
+  text-align: center;
+  padding: 3px;
+}
+
+tr:nth-child(odd) {
+  background-color: #f4f7f8;
+}

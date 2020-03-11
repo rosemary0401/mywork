@@ -1,0 +1,40 @@
+﻿* variable -> array
+* statement -> if/else
+* loop (for, while, do)
+* function
+* change DOM object
+
+===== nodejs (backend) =====
+* url shorten service
+* shopping cart
+
+===== database =====
+curd
+
+=====homework=====
+* 頁面上有1個button，按了之後會alert("hello");
+* 頁面上有1個button和1個<p> tag，按了之後會alert <p> tag內的文字
+* 頁面上有1個button和1個<p> tag，按了之後會改變<p> tag內的文字
+* 頁面上有1個button和1個<p> tag，按了之後會改變<p> tag內文字的顏色
+* 頁面上有1個button和2個<p> tag，按了之後會改變第1個<p> tag內的文字
+* 頁面上有1個button和2個<p> tag，按了之後會改變第2個<p> tag內的文字
+
+* 頁面上有1個button和1個textbox，按了之後會alert textbox內的文字
+* 頁面上有1個button和2個textbox，按了之後會alert textbox1 + textbox2內的文字
+* 頁面上有1個button和2個textbox和1個<p> tag，按了之後會把textbox1 + textbox2內的文字assign給<p> tag
+
+* 頁面上有1個dropdown list和1個textbox，dropdown list選取後會把內容貼到textbox裡
+* 頁面上有1個dropdown list和1個button，按了之後會把doggy貼到dropdown list裡
+* 頁面上有1個dropdown list和1個textbox和1個button，按了之後會把textbox裡的內容貼到dropdown list裡
+
+頁面上有1個textbox和1個button，按了button之後，如果textbox內的值大於等於60則alert("pass");，否則alert("fail");
+
+頁面上有1個textbox和1個button，按了button之後，如果textbox內的值大於等於60則alert("pass");，否則alert("fail");，如果textbox內輸入得值並非數字，則alert("invalid");
+
+頁面上有2個textbox和1個button，按了button之後，會把textbox內的值加總，並且alert加總後的結果
+
+
+* bitcoin observer
+* pump finder
+
+

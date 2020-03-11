@@ -1,0 +1,92 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <script>
+      function myFunction(){
+      document.getElementById('demo6').innerHTML='paragraph changed!';
+      }
+    </script>
+  </head>
+  <body>
+    <h3>My first Javascript</h3>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+    Click me to display Date and Time.
+    </button>
+    <p id="demo"></p>
+    
+    <h3>What can JavaScript do?</h3>
+    <p id="demo1">JavaScript can change HTML content.</p>
+    <button onclick="document.getElementById('demo1').innerHTML = 
+    'Hello Javascript!'">Click Me!</button>
+    
+    <h3>JavaScript changes the value of the src (source) attribute of an image.</h3>
+    <button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+    <img id="myImage" src="pic_bulboff.gif">
+    <button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+    
+    <h3 id="demo2">JavaScript can change the style of an HTML element.</h3>
+    <button onclick="document.getElementById('demo2').style.fontSize='35px'">Click Me!</button>
+    <button onclick="document.getElementById('demo2').style.color='blue'">Click Me!</button>
+    
+    <h3>JavaScript can Can Hide HTML Elements.</h3>
+    <p id="demo3">JavaScript will hide when you click on 'ClickMe'.</p> 
+    <button onclick="document.getElementById('demo3').style.display='none'">Click Me to hide!</button>
+    
+    <h3>JavaScript can show HTML element.</h3>
+    <p id="demo4" style="display:none">Hello, this is JavaScript!</p>
+    <button onclick="document.getElementById('demo4').style.display='block'">Click Me to show!</button>
+
+    <h3>JavaScript in Body + modified HTML element using innerHTML</h3>
+    <p>You can place any number of scripts in an HTML document.</p>
+    <p>Scripts can be placed in the 'body', or in the 'head' section of an HTML page, or in both.</p>
+    <p id="demo5"></p>
+    <script>document.getElementById('demo5').innerHTML="JavaScript!";</script>
+    
+    <h3>JavaScript in Head</h3>
+    <p>Use event to call function</p>
+    <p id="demo6">A Paragraph</p>
+    <button onclick="myFunction()">Try it!</button>
+
+    <h3>JavaScript in Body</h3>
+    <p>put function in script in body</p>
+    <p id="demo7">Another Paragraph</p>
+    <button onclick="changeParagraph()">Try it!</button>
+    <script>function changeParagraph(){
+      document.getElementById('demo7').innerHTML="Paragraph changed!";
+      }
+    </script>
+    <!--Placing scripts at the bottom of the <body> element improves the display speed, 
+      because script interpretation slows down the display.-->
+    <h3>External JavaScript</h3>
+    <p>1.JavaScript files have the file extension .js.</p>
+    <p>2.To use an external script, put the name of the script file in the src (source) attribute of a script tag</p>
+    <p>3.External scripts cannot contain script tags.</p>
+    <p>4.You can place an external script reference in head or body as you like.</p>
+    <p>5.To add several script files to one page - use several script tags</p>
+    <p>6.External scripts can be referenced with a full URL or with a path relative to the current web page.</p>
+    <p>總結:head、body、external file都可以放，一次可以放多個script tags</p>
+
+    <h3>JavaScript can "display" data in different ways</h3>
+    <p>1.innerHTML-select element to define html content</p>
+    <p>2.document.write() - only for testing purpose, 
+      and be careful to use it because it will delete all exsiting HTML after an HTML is loaded.</p>
+    <p>3.window.alert() - alert box</p>
+    <p>4.console.log -debugging prupose</p>
+
+    <h3>JavaScript Statements</h3>
+    <p>A <b>JavaScript program</b> is a list of <b>statements</b> to be executed by a computer.</p>
+    <p id="demo8"></p>
+    <script>
+      const x = 1;
+      const y = 2;
+      const z = x + y;
+      document.getElementById('demo8').innerHTML="The value of z is "+ z +" .";
+    </script>
+    <h3>JavaScript syntax</h3>
+    <p>numbers are not allowed as the first character</p>
+    <p>letters,underscore,and dollar sign can be the first character</p>
+    <p>case sensitive</p>
+    <p>Hyphens are not allowed in JavaScript. They're reserverd for subtractions</p>
+    <p>comment： // (single line) and /**/ (multiple lines)</p>
+  </body>
+</html>
