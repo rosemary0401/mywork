@@ -3,3 +3,4 @@
 * JavaScript alert box
 * put script in body
 * onlick
+* button
