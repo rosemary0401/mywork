@@ -4,3 +4,4 @@
 * put script in body
 * onlick
 * button
+* information
