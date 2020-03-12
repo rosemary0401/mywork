@@ -2,19 +2,74 @@
 <html>
   <head>
     <style>
+      .box-before {
+        width: 300px;
+        height: 50px;
+        background-color: dodgerblue; 
+        color: white;
+        font-size: 20px;
+      }
+      .box-1 {
+        width: 300px;
+        color: white;
+        font-size: 20px;
+        padding: 10px;
+        box-sizing: border-box;
+        background-color: #fd3c40;
+        position: relative;
+      }
+      .box-2 {
+        height: 50px;
+        color: white;
+        font-size: 20px;
+        background-color: #8c4fb6;
+      }
+     .box-3 {
+        height: 50px;
+        color: white;
+        font-size: 20px;
+        background-color: #00b842;
+     } 
+     .box-after {
+        width: 300px;
+        height: 50px;
+        background-color: #faaa20; 
+        color: white;
+        font-size: 20px;
+     }
       div.relative {
         position: relative;
         left: 30px;
         border: 3px solid #73AD21;
       }
+      div.absolute {
+        position: absolute;
+        border: 3px solid #73AD;
+      }
     </style>
   </head>
   <body>
-    <div>
-      <p class="relative">I have a relative position.</p>
+    <div class="box-before">
+      box-before
     </div>
-    <div>
-      <p class="absolute">I have absolute position.</p>
+    <div class="box-1">
+      box-1
+      <div class="box-2">
+        box-2
+      </div>
+      <div class="box-3">
+        box-3
+      </div>
+    </div>
+    <div class="box-after">
+      box-after
+    </div>
+    <hr>
+    <div class="relative">
+      <p>I have a relative position.</p>
+    </div>
+    <div class="absolute">
+      <p>I have absolute position.</p>
   </div>
   </body>
 </html>
