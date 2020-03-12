@@ -23,6 +23,9 @@
         color: white;
         font-size: 20px;
         background-color: #8c4fb6;
+        position:absolute;
+        top: 0px;
+        left: 0px;
       }
      .box-3 {
         height: 50px;
@@ -37,15 +40,29 @@
         color: white;
         font-size: 20px;
      }
-      div.relative {
-        position: relative;
-        left: 30px;
-        border: 3px solid #73AD21;
+     .box-4 {
+        width: 300px;
+        color: white;
+        font-size: 20px;
+        padding: 10px;
+        box-sizing: border-box;
+        background-color: #fd3c40;
       }
-      div.absolute {
-        position: absolute;
-        border: 3px solid #73AD;
+      .box-5 {
+        height: 50px;
+        color: white;
+        font-size: 20px;
+        background-color: #8c4fb6;
+        position:absolute;
+        top: 0px;
+        left: 0px;
       }
+     .box-6 {
+        height: 50px;
+        color: white;
+        font-size: 20px;
+        background-color: #00b842;
+     } 
     </style>
   </head>
   <body>
@@ -64,12 +81,23 @@
     <div class="box-after">
       box-after
     </div>
+    <p>box-2: My father is box-1, which has relative position.</p>
     <hr>
-    <div class="relative">
-      <p>I have a relative position.</p>
+    <div class="box-before">
+      box-before
     </div>
-    <div class="absolute">
-      <p>I have absolute position.</p>
-  </div>
+    <div class="box-4">
+      box-4
+      <div class="box-5">
+        box-5
+      </div>
+      <div class="box-6">
+        box-6
+      </div>
+    </div>
+    <div class="box-after">
+      box-after
+    </div>
+    <p>box-5: My father is the whole body.</p>
   </body>
 </html>
