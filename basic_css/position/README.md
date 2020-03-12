@@ -7,7 +7,14 @@
   - sticky
 * To use position properties such as`top`, `bottom`, `right`, `left` properties, we have to set the one of the five position values first. For example:`position: relative`
 
+* `position: relative`
+  - element will be positioned relatively by using `top`, `bottom`, `right`, `left` properties
+  - relatively-positioned element will move away its normal position by setting `top`, `bottom`, `right`, `left` properties
+  - other elements next to the relatively-positioned element won't be moved to fit into the gap left by the relatively-positioned element
 
+* `position:absolute`
+  
+  
 relative:要設定上下左右的值才會看出變化，設定後，在他相鄰其他元素的位置不會移動，但子元素會跟著移動
 
 absolute:is positioned relative to the nearest positioned ancestor
