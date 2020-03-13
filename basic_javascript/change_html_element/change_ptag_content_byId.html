@@ -1,24 +1,25 @@
 <!Doctype html>
 <html>
-    <body>
-        <p id="01">hello</p>
-        <button onclick="myFunction()">Click me</button> 
-        <br>
-        <button onclick="myFunc2()">Click me again</button>
+    <head>
         <script>
-        //In this function, we try to change the innerHTML of a p tag which id is "01"
-        function myFunction() {
-            document.getElementById("01").innerHTML = "You pressed";
-        }
-        
-        //We can do the same thing in this function
-        function myFunc2() {
-            //we assign a p tag which id is "01" to a variable element
-            var element = document.getElementById("01");
+            //In this function, we try to change the innerHTML of a p tag which id is "01"
+            function myFunction() {
+                document.getElementById("01").innerHTML = "You pressed";
+            }
             
-            element.innerHTML = "You pressed la";
-        }
+            //We can do the same thing in this function
+            function myFunc2() {
+                //we assign a p tag which id is "01" to a variable element
+                var element = document.getElementById("01");
+                
+                element.innerHTML = "You pressed la";
+            }
         </script>
-
-    </body>
+    </head>
+<body>
+    <p id="01">hello</p>
+    <button onclick="myFunction()">Click me</button> 
+    <br>
+    <button onclick="myFunc2()">Click me again</button>   
+</body>
 </html>
