@@ -1,21 +1,23 @@
 <!Doctype html>
 <html>
-    <body>
-        <p>hello</p>
-        <p>world</p>
-        <button onclick="myFunction()">Click me</button> 
-        <button onclick="myFunc2()">Click again</button> 
+    <head>
         <script>
-        //getElementsByTagName
-        function myFunction() {
-            document.getElementsByTagName("p")[1].innerHTML = "You pressed";
-        }
-        function myFunc2(){
+            //getElementsByTagName
+            function myFunction() {
+                document.getElementsByTagName("p")[1].innerHTML = "You pressed";
+            }
+            
+            function myFunc2(){
             //document.getElementsByTagName("p")[0].innerHTML = "doggy";
-           var x = document.getElementsByTagName("p");
-           x[0].innerHTML="doggy";
-        }
+                var x = document.getElementsByTagName("p");
+                x[0].innerHTML="doggy";
+            }
         </script>
-
-    </body>
+    </head>
+<body>
+    <p>hello</p>
+    <p>world</p>
+    <button onclick="myFunction()">Click me</button> 
+    <button onclick="myFunc2()">Click again</button>    
+</body>
 </html>
