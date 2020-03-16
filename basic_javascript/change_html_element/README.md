@@ -3,7 +3,7 @@
 * Five ways to find HTML elements:
   - by id 
   - by tag name 
-  - by 1class name 
+  - by class name 
   - by CSS selectors 
   - by HTML object collections
 
