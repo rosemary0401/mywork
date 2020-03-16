@@ -17,7 +17,9 @@
     - document.scripts
     - document.title
 
-* 
+* The HTML DOM allows javascript to change the style of HTML elements.
+* write this syntax in `<script></script>`: `document.getElementById(id).style.property = new style`
+
 # Explain for change_ptag_byId.html
 * 
 # Explain for change_ptag_content_byTagName.html
