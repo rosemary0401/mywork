@@ -10,12 +10,12 @@
     - document.body
     - document.documentElement
     - document.embeds
-document.forms
-document.head
-document.images
-document.links
-document.scripts
-document.title
+    - document.forms
+    - document.head
+    - document.images
+    - document.links
+    - document.scripts
+    - document.title
 
 * 
 # Explain for change_ptag_byId.html
