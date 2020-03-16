@@ -1,6 +1,6 @@
 # Explain for change_ptag_color.html
 * To use javascript to manipulate HTML elements, we have to find the elements first.
-* Five ways to find HTML elements:
+* Five s to find HTML elements:
   - by id : document.getElementById("")
   - by tag name : document.getElementsByTagName("")
   - by class name : document.getElementsByClassName("")
