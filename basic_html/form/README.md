@@ -5,7 +5,7 @@
 * inside `<input>` element, use different attributes to present different effects :
   - `type` attribute for kind of `<input>` you use : text, radio, submit(Defines a submit button (for submitting the form))
   - `id` attribute for clicking the text will select `<label>` automaticallly. The id of the element the label is bound to.
-  - `name` attribute will share the same value to be treated as a group.Once the radio group is created, selecting any radio button in that group automatically deselects any other selected radio button in the same group.
+  - `name` attribute will share the same value to be treated as a group.Once the radio group is created, selecting any radio button in that group automatically deselects any other selected radio button in the same group. If the `name` attribute is omitted, the data of that input field will not be sent at all.
   - `value` attribute : The value attribute defines the unique value associated with each radio button. The value is not shown to the user, but is the value that is sent to the server on "submit" to identify which radio button that was selected.
   
 * use `<labe>` & `<input>` together will benefit:
