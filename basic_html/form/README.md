@@ -11,3 +11,4 @@
 * use `<labe>` & `<input>` together will benefit:
   - Users who have difficulty clicking on very small regions (such as checkboxes) - because when a user clicks the text within the <label> element, it toggles the input (this increases the hit area). 
   - https://www.w3schools.com/tags/tag_label.asp
+  - https://www.w3schools.com/html/html_forms.asp
