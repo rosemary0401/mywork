@@ -18,3 +18,5 @@
 * inside `<select>`, use `id` attribute to specify the element the `<label>` `for` attribute is bound to.
 * inside `<select></select>`, use `<option></option>` to make each option in the list
 * inside `<option>`, use `value` attribute to define each option in the list
+* By default, the first utem in the drop-down list is selected.
+* To define a pre-selected option, add the `selected` attribute  to the `<option>`.
