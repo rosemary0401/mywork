@@ -12,3 +12,9 @@
   - Users who have difficulty clicking on very small regions (such as checkboxes) - because when a user clicks the text within the <label> element, it toggles the input (this increases the hit area). 
   - https://www.w3schools.com/tags/tag_label.asp
   - https://www.w3schools.com/html/html_forms.asp
+
+## The Select Element
+* use `<select></select>` to make a dropdown list
+* inside `<select>`, use `id` attribute to specify the element the `<label>` `for` attribute is bound to.
+* inside `<select></select>`, use `<option></option>` to make each option in the list
+* inside `<option>`, use `value` attribute to define each option in the list
