@@ -21,3 +21,4 @@
 * inside `<option>`, use `value` attribute to define each option in the list
 * By default, the first utem in the drop-down list is selected.
 * To define a pre-selected option, add the `selected` attribute  to the `<option>`.
+* add `multiple` attribute to the `<select>` to allow the user to select more than one option.
