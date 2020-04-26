@@ -2,7 +2,13 @@
 <html>
 <head>
   <style>
+    .main img, .side img {
+      width: 100%;
+    }
 
+    @media (max-width:700px) {
+      flex-direction: column;
+    }
   </style>
 </head>
 <body>
@@ -11,14 +17,14 @@
       <h1>My Website</h1>
       <p>with a <b>flexible</b> layout.</p>
   </div>
-  
+
   <!--navbar-->
   <div class="navbar">
-    <a href="#">Link</a>
-    <a href="#">Link</a>
-    <a href="#">Link</a>
-    <a href="#">Link</a>
-    <a href="#">Link</a>
+    <a href="https://ray-and-star.blogspot.com/" target=_blank>首頁</a>
+    <a href="#">找食譜</a>
+    <a href="#">農園種植</a>
+    <a href="https://www.facebook.com/%E7%91%9E%E6%98%9F%E7%9A%84%E4%B8%80%E7%95%9D%E7%94%B0-109213070740273" target=_blank>Facebook</a>
+    <a href="https://www.youtube.com/channel/UCf78cBzm4xgwEigqtmaAMyg/featured?fbclid=IwAR1nhGEBS6apA5KSFbptK9yi4e6TPT5L9y-ueg8phhbmS9e7eHg-lRu770k" target=_blank>YouTube</a>
   </div>
 
   <!--The flexible content-->
@@ -26,25 +32,27 @@
     <div class="side">
       <h2>About Me</h2>
       <h5>Photo of me:</h5>
-      <img src="">
+      <img src="xuite頭像.jpg">
       <p>Hello, I'm Rayshin.</p>
       <h3>More Text</h3>
       <p>Look more photos</p>
-      <img src="">
-      <img src="">
-      <img src="">
+      <img src="滷肉飯縮圖01.jpg">
+      <img src="牛肉麵成品縮圖.jpg">
+      <img src="沖繩苦瓜豆腐豬肉炒蛋_縮圖.jpg">
     </div>
     <div class="main">
-      <h2>Title Heading</h2>
-      <h5>title description, April 26, 2020</h5>
-      <img src="">
-      <p>Some Text...</p>
+      <h2>遊子思鄉味ー台式滷肉飯</h2>
+      <h5>April 27, 2020</h5>
+      <img src="滷肉飯縮圖01.jpg">
+      <p>台灣的滷肉飯做法簡單，材料只有豬肉、紅蔥頭及醬油等調味料，細火慢滷後就成色香味俱全超級下飯的料理。旅外的家人想吃台灣味的時候，台式滷肉飯最能滿足思鄉之味。
+      </p>
       <p>main content...</p>
       <br>
-      <h2>Title Heading</h2>
-      <h5>title description, April 26, 2020</h5>
-      <img src="">
-      <p>Some Text...</p>
+      <h2>十三香蔬果牛肉麵ー辛香料與蔬果熬煮而成的牛肉麵</h2>
+      <h5>April 26, 2020</h5>
+      <img src="牛肉麵成品縮圖.jpg">
+      <p>十三香包括花椒、八角、山奈、白芷、高良薑、草果、肉豆蔻、小茴香、砂仁、木香、桂皮、甘薑、丁香等十三種香料，比例以花椒、八角最多，再來是山奈、白芷、高良薑，而草果、肉豆蔻、小茴香、砂仁、木香、桂皮、甘薑、丁香則各一點點而己。
+        辛辣的部分用到蔥、薑、蒜及辣椒。蔬菜有紅、白蘿蔔、洋蔥、蕃茄，水果有蘋果。</p>
       <p>main content...</p>
     </div>
 </div>
