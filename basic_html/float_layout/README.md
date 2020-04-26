@@ -8,3 +8,4 @@
 * create HTML includes a header, a section with nav and article to form two columns/boxes, and a footer
 * second step: write HTML code and use clear tags like`<section></section>``<article></article>``<nav></nav>`
 `<footer></footer>` etc.
+* third step: write css in the `<style></style>`
