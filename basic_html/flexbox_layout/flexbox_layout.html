@@ -1,19 +1,52 @@
 <!Doctype html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .body {
+      font-family: Arial;
+      margin: 0;
+    }
+
     .main img, .side img {
       width: 100%;
     }
 
-    @media (max-width:700px) {
+    .header {
+      background-color:dodgerblue;
+      color: white;
+      text-align: center;
+      padding: 60px;
+    }
+
+    .navbar {
+      display: flex;
+      background-color: #333;
+    }
+
+    .navbar a { 
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      text-align: center;  
+    }
+    
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    @media (max-width:600px) {
       flex-direction: column;
     }
   </style>
 </head>
 <body>
   <!--Header-->
-  <div>
+  <div class="header">
       <h1>My Website</h1>
       <p>with a <b>flexible</b> layout.</p>
   </div>
@@ -46,14 +79,14 @@
       <img src="滷肉飯縮圖01.jpg">
       <p>台灣的滷肉飯做法簡單，材料只有豬肉、紅蔥頭及醬油等調味料，細火慢滷後就成色香味俱全超級下飯的料理。旅外的家人想吃台灣味的時候，台式滷肉飯最能滿足思鄉之味。
       </p>
-      <p>main content...</p>
+      <p>main content.</p>
       <br>
       <h2>十三香蔬果牛肉麵ー辛香料與蔬果熬煮而成的牛肉麵</h2>
       <h5>April 26, 2020</h5>
       <img src="牛肉麵成品縮圖.jpg">
       <p>十三香包括花椒、八角、山奈、白芷、高良薑、草果、肉豆蔻、小茴香、砂仁、木香、桂皮、甘薑、丁香等十三種香料，比例以花椒、八角最多，再來是山奈、白芷、高良薑，而草果、肉豆蔻、小茴香、砂仁、木香、桂皮、甘薑、丁香則各一點點而己。
         辛辣的部分用到蔥、薑、蒜及辣椒。蔬菜有紅、白蘿蔔、洋蔥、蕃茄，水果有蘋果。</p>
-      <p>main content...</p>
+      <p>main content.</p>
     </div>
 </div>
 
