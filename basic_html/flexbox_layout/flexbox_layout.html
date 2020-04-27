@@ -1,13 +1,14 @@
 <!Doctype html>
 <html>
 <head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     * {
       box-sizing: border-box;
     }
 
-    .body {
+    body {
       font-family: Arial;
       margin: 0;
     }
@@ -17,10 +18,10 @@
     }
 
     .header {
-      background-color:dodgerblue;
+      background-color:darkseagreen;
       color: white;
       text-align: center;
-      padding: 60px;
+      padding: 50px;
     }
 
     .navbar {
@@ -39,16 +40,42 @@
       background-color: #ddd;
       color: black;
     }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .side {
+      background-color: #f1f1f1;
+      flex: 30%;
+      padding: 20px;
+    }
+
+    .main {
+      flex: 70%;
+      background-color: white;
+      padding: 20px;
+    }
+
+    .footer {
+      background-color: #ddd;
+      text-align: center;
+      padding: 20px;
+    }
+
     @media (max-width:600px) {
+      .row, .navbar {
       flex-direction: column;
+      }
     }
   </style>
 </head>
 <body>
   <!--Header-->
   <div class="header">
-      <h1>My Website</h1>
-      <p>with a <b>flexible</b> layout.</p>
+      <h1>瑞星的一畝田</h1>
+      <p>My website with a <b>flexible</b> layout.</p>
   </div>
 
   <!--navbar-->
@@ -66,12 +93,11 @@
       <h2>About Me</h2>
       <h5>Photo of me:</h5>
       <img src="xuite頭像.jpg">
-      <p>Hello, I'm Rayshin.</p>
-      <h3>More Text</h3>
-      <p>Look more photos</p>
-      <img src="滷肉飯縮圖01.jpg">
-      <img src="牛肉麵成品縮圖.jpg">
-      <img src="沖繩苦瓜豆腐豬肉炒蛋_縮圖.jpg">
+      <p>Hello, I'm Rayshin. Please subscribe my YouTube channel.</p>
+      <h3>The Lastest Articles</h3>      
+      <div><img src="滷肉飯縮圖01.jpg"></div><br>
+      <div><img src="牛肉麵成品縮圖.jpg"></div><br>
+      <div><img src="沖繩苦瓜豆腐豬肉炒蛋_縮圖.jpg"></div>
     </div>
     <div class="main">
       <h2>遊子思鄉味ー台式滷肉飯</h2>
@@ -79,20 +105,20 @@
       <img src="滷肉飯縮圖01.jpg">
       <p>台灣的滷肉飯做法簡單，材料只有豬肉、紅蔥頭及醬油等調味料，細火慢滷後就成色香味俱全超級下飯的料理。旅外的家人想吃台灣味的時候，台式滷肉飯最能滿足思鄉之味。
       </p>
-      <p>main content.</p>
+      <p><a href="#" style="text-decoration: none; color:black">read more...</a></p>
       <br>
       <h2>十三香蔬果牛肉麵ー辛香料與蔬果熬煮而成的牛肉麵</h2>
       <h5>April 26, 2020</h5>
       <img src="牛肉麵成品縮圖.jpg">
       <p>十三香包括花椒、八角、山奈、白芷、高良薑、草果、肉豆蔻、小茴香、砂仁、木香、桂皮、甘薑、丁香等十三種香料，比例以花椒、八角最多，再來是山奈、白芷、高良薑，而草果、肉豆蔻、小茴香、砂仁、木香、桂皮、甘薑、丁香則各一點點而己。
         辛辣的部分用到蔥、薑、蒜及辣椒。蔬菜有紅、白蘿蔔、洋蔥、蕃茄，水果有蘋果。</p>
-      <p>main content.</p>
+      <p><a href="#" style="text-decoration: none; color:black">read more...</a></p>
     </div>
 </div>
 
 <!--Footer-->
 <div class="footer">
-  <h2>Footer</h2>
+  <h2>Ads</h2>
 </div>
 
 </body>
