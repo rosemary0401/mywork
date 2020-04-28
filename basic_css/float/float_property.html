@@ -10,6 +10,7 @@
       font-family: Arial;
     }
 
+    /* float images with equal width*/
     .img-container img {
       width: 100%;
     }
@@ -20,17 +21,37 @@
       padding: 5px;
     }
 
+    /*for all examples*/
     .main::after {
       content: "";
       clear: both;
       display: table;
     }
 
+    /* float images with equal heights*/
+    .img-container01 {
+      float: left;
+      width: 50%;
+      padding: 5px;
+
+    }
+
+    .img-container01 img {
+      width: 100%;
+    }
+
+    /* float boxes with equal heights*/
+    .box {
+      float: left;
+      width: 50%;
+      padding: 50px;
+      height: 300px;
+    }
   </style>
 </head>
 <body>
   <h2>Images Side by Side</h2>
-  <p>Float images side by side by using "float:left" with an equal width by using "width:33.33%" :</p>
+  <p>Float images side by side by using <b>"float:left"</b> with an <b>equal width</b> by using <b>"width:33.33%"</b> :</p>
   <div class="main">
     <div class="img-container">
       <img src="golden-retriever.jpg" alt="golden retriever">
@@ -45,5 +66,31 @@
   <p>::after makes an extra break line</p>
   <p>box-sizing makes float images not break due to extra padding</p>
   <p>resize browser won't make change for float image layout</p>
+  <br>
+  <p>Float images with "equal heights"</p>
+  <div class="main">
+    <div class="img-container01">
+      <img src="golden-retriever.jpg" alt="golden retriever">
+    </div>
+    <div class="img-container01">
+      <img src="husky.jpg" alt="husky">
+    </div>
+  </div>
+  <p>Float boxes with "equal heights"</p>
+  <div class="main">
+    <div class="box" style="background-color: #ccc;">
+      <h2>Box1</h2>
+      <p>some content, some content, some content</p>
+    </div>
+    <div class="box" style="background-color: #ddd;">
+      <h2>Box2</h2>
+      <p>some content, some content, some content</p>
+      <p>some content, some content, some content</p>
+      <p>some content, some content, some content</p>
+    </div>
+  </div>
+  <p>Float boxes with equal height is not easy to control flexible.</p>
+  <p>When you add more contents to each one of boxes and resize the browser, you'll see the example above, the box2's content displayed outside of the box.</p>
+  <p>The best solution: CSS3 flexbox</p>
 </body>
 </html>
