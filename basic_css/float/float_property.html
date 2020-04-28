@@ -2,13 +2,48 @@
 <html>
 <head>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial;
+    }
+
+    .img-container img {
+      width: 100%;
+    }
+
+    .img-container {
+      float: left;
+      width: 33.33%;
+      padding: 5px;
+    }
+
+    .main::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
   </style>
 </head>
 <body>
   <h2>Images Side by Side</h2>
   <p>Float images side by side:</p>
-  <img src="" alt="">
-  <img src="" alt="">
-  <img src="" alt="">
+  <div class="main">
+    <div class="img-container">
+      <img src="golden-retriever.jpg" alt="golden retriever">
+    </div>
+    <div class="img-container">
+      <img src="husky.jpg" alt="husky">
+    </div>
+    <div class="img-container">
+      <img src="puppy.jpg" alt="labrador retriever">
+    </div>
+  </div>
+  <p>::after makes an extra break line</p>
+  <p>box-sizing makes float images not break due to extra padding</p>
+  <p>resize browser won't make change for float image layout</p>
 </body>
 </html>
