@@ -2,8 +2,42 @@
 <html>
 <head>
   <style>
+    ul {
+      background-color: black;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden; /* this will show the background color*/
+    }
+
+    li {
+     float: left;
+    }
+
+    li a {
+      display: inline-block;/*this makes this area float but won't affect areas next to it*/
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+
+    li a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .home {
+      background-color: red;
+    }
   </style>
 </head>    
 <body>
+    <ul>
+      <li class="home"><a href="#">Home</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
 </body>
 </html>
