@@ -6,4 +6,7 @@
 * use `<ul></ul>`
 - overflow: hidden
 - float: left區塊後的element要用 clearfix:after
+
 ## use flex to make navigation
+- use `display: flex`
+- use `flex-wrap: nowrap`
